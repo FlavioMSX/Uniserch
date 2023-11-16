@@ -1,0 +1,147 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, 
+input, 
+button {
+    font-family: Arial, sans-serif;
+}
+
+/*Header*/
+
+.menu {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_section {
+    display: flex;
+    align-items: center;
+}
+
+.menu_link {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #757575;
+    padding: 12px 8px
+}
+
+.menu_link.active {
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4;
+}
+
+.menu_link:not(.active) {
+    margin-bottom: 2px;
+}
+
+.menu_section.right {
+    margin-right: 4px;
+}
+
+.menu_section.right .menu_icon {
+    padding: 12px;
+}
+
+.menu_profile {
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.menu_avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.menu_avatar-frame {
+    position: absolute;
+    top: 0;
+    left: 0;  
+}
+
+/*Main*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 8px 0;
+}
+
+.content_logo {
+    height: 250px;
+}
+
+.content_offer {
+    margin-top: 24px;
+    font-size: 13px;
+    padding: 6px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Serch*/
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i {
+    margin: 0px 2px;
+    color: #70757a;
+}
+
+.button[type="submit"]{
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0,5s ease;
+}
+
+
+.input[type="text"]{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+}
+
+.button[type="submit"], .button[type="button"]{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-microphone{
+    display: inline-block;
+    font-size: 15px;
+    background-image: linear-gradient(to bottom, #0074d9, #ff4136, #0074d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-search{
+    display: inline-block;
+    font-size: 15px;
+    background-image: linear-gradient(to bottom, #0074d9, #ff4136, #0074d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
